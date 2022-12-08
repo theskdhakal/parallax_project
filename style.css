@@ -1,0 +1,171 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+
+  /* navigation  */
+}
+nav {
+  background: rgba(0, 0, 0, 0.958);
+  color: white;
+  font-size: 1.5rem;
+  position: sticky;
+  top: 0;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu ul li {
+  transition: all 2s;
+  transition: transform 1s;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu ul li:hover {
+  cursor: pointer;
+  color: red;
+  transform: scale(1.2);
+}
+
+.logo {
+  background: linear-gradient(blue, white);
+
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1 rem;
+  font-style: italic;
+
+  transition: all 5s;
+}
+
+.logo:hover {
+  cursor: crosshair;
+}
+
+/* video section  */
+
+.video {
+  min-height: 30vh;
+
+  position: relative;
+  /* margin-bottom: 2rem; */
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+.video > div {
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+
+  color: white;
+
+  background: rgb(75, 157, 198, 0.1);
+  padding: 1rem;
+  border-radius: 5px;
+  border: solid 1px rgb(137, 120, 87, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+  background: grey;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* image section  */
+
+.title {
+  background: rgb(0, 0, 0, 0.5);
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.img1 {
+  background: url(asset/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img2 {
+  background: url(asset/img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img3 {
+  background: url(asset/img3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img4 {
+  background: url(asset/img4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img5 {
+  background: url(asset/img5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* footer section  */
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  height: 40px;
+  padding-top: 10px;
+
+  position: sticky;
+  bottom: 0;
+}
